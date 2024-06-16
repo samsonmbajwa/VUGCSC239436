@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sammy.css">
+    <title>Shoe Store</title>
+</head>
+<!-- Button to open the modal -->
+<button onclick="document.getElementById('id01').style.display='block'">Proceed to Payment</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>SHIPPING INFORMATION</h1>
+    <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" Name="email" required>
+
+      <label for="psw"><b>Name</b></label>
+      <input type="password" placeholder="Enter Name..." name="psw" required>
+
+      <label for="psw-repeat"><b>Country</b></label>
+      <input type="password" placeholder="Nigeria" name="psw-repeat" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By proceeding to pay, you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+       <head>
+       <style>
+        .card-input {
+          background-color: blue;
+          color: rgb(255, 255, 255);
+          border: none;
+          padding: 10px;
+          text-align: center; /*Updated this line to center the text
+        }
+        </style>
+        </head>
+        <body>
+        
+          <input type="text"
+        inputmode="numeric" pattern="\d*"
+        maxlength="4" class="card-input"
+        placeholder="**** **** **** 4190"
+        oninput="this.value=this.value.replace(/[0-9]/g,'');"
+      
+      <div class="clearfix">
+        <button type="submit" class="signup">PAY</button>
+      </div>
+    </div>
+  </form>
+</div>
